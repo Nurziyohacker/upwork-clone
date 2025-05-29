@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="m.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,9 +26,17 @@
           <li>Trips</li>
           <li>Review</li>
           <li class="li-1"><span><i class="bi bi-globe-americas"></i></span>| USD</li>
-          <li style="color: white;margin-top: -10px;
-             padding: 10px; background-color: black; font-weight: bold;
-              border-radius: 20px;">Sign in</li>
+          <button class="btn clbl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">sing in</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
         </ul>
       </nav>
 
@@ -35,21 +44,49 @@
     <ul class="nav-2">
 
       <li class="tashkent-link">
+        <a href="./main.html">
+
         <div class="aoa">
           <span class="icon"><i class="bi bi-map"></i></span>
           <span class="text">Tashkent</span>
         </div>
+      </a>
 
         <div class="underline"></div>
       </li>
-      <li>Hotels</li>
-      <li>Things to Do</li>
-      <li>Restaurants</li>
-      <li>Flights</li>
-      <li>Vacation Rentals</li>
-      <li>Cruises</li>
-      <li>Rental Cars</li>
-      <li>Forums</li>
+      <li>
+        <a href="#">
+          Hotels
+        </a>
+      </li>
+      <li>
+
+        <a href="./details.html">Things to Do</a>
+      </li>
+      <li>
+
+        <a href="./index.html">Restaurants</a>
+      </li>
+      <li>
+
+        <a href="#">Flights</a>
+      </li>
+      <li>
+
+        <a href="#">Vacation Rentals</a>
+      </li>
+      <li>
+
+        <a href="#">Cruises</a>
+      </li>
+      <li>
+
+        <a href="#">Rental Cars</a>
+      </li>
+      <li>
+
+        <a href="#">Forums</a>
+      </li>
     </ul>
     <div class="breadcrumbs">
       <div>Asia > Uzbekistan > Tashkent Province > Tashkent</div>
@@ -91,6 +128,7 @@
         </div>
       </section>
     </main>
+    <main>
     <div class="assistant-box">
       <div class="assistant-title">Ask our AI assistant <span
           style="background:#eee; border-radius:6px; font-size:12px; padding:2px 6px;">BETA</span></div>
@@ -564,6 +602,7 @@
             <p>from $66 per group</p>
           </div>
       </section>
+      
       <section class="heading-8">
         <div class="text-3">Bars</div>
 
@@ -816,6 +855,7 @@
             </ul>
         </section>
     </div>
+  </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -858,6 +898,15 @@
         </div>
     </footer>
 <script>
+  let bolasis = document.querySelectorAll(".bolasi")
+
+  Array.from(bolasis).forEach( (el) => {
+    el.addEventListener("click", () => {
+window.location.href = "http://127.0.0.1:5500/index.html"
+  })
+  }
+
+  )
         function toggleFAQ(element) {
             const faqItem = element.parentElement;
             const isActive = faqItem.classList.contains('active');
@@ -891,187 +940,6 @@
             }
         });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
   <script>
     document.querySelectorAll('.chip').forEach(chip => {
@@ -1087,7 +955,7 @@
       });
     });
   </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
 </body>
 
